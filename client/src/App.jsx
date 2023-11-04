@@ -4,7 +4,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
 import Navbar from './components/Navbar';
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: 'graphql',
   cache: new InMemoryCache(),
 });
 
@@ -16,5 +16,4 @@ function App() {
     </ApolloProvider>
   );
 }
-
 export default App;
